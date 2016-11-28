@@ -1,0 +1,24 @@
+<ion-view view-title="Feed">
+  <ion-content class="padding">
+    <ion-list>
+      <div class="list card" ng-repeat="item in items">
+        <ion-item class="item item-avatar">
+          <img ng-src="{{item.avatar}}">
+          <h2>{{item.name}}</h2>
+          <p>{{item.date}}</p>
+        </ion-item>
+
+        <ion-item class="item item-body">
+          <img class="full-image" src="{{item.image}}">
+          <p>
+            {{item.content}}
+          </p>
+          <p>
+            <a href="#" class="subdued">1 Like</a>
+            <a href="#" class="subdued">5 Comments</a>
+          </p>
+        </ion-item>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
